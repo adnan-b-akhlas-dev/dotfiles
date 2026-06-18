@@ -24,10 +24,11 @@ $python\
 $conda\
 [](fg:sapphire bg:lavender)\
 $time\
-[ ](fg:lavender)\
+[](fg:lavender bg:teal)\
 $cmd_duration\
+[ ](fg:teal)\
 $line_break\
-\n$character"""
+$character"""
 
 palette = 'catppuccin_mocha'
 
@@ -56,6 +57,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+CachyOS = "󰣇"
 
 [username]
 show_always = true
@@ -148,12 +150,12 @@ ignore_base = false
 
 [time]
 disabled = false
-time_format = "%R"
+time_format = "%r"
 style = "bg:lavender"
 format = '[[  $time ](fg:crust bg:lavender)]($style)'
 
 [line_break]
-disabled = true
+disabled = false
 
 [character]
 disabled = false
@@ -165,12 +167,12 @@ vimcmd_replace_symbol = '[❮](bold fg:lavender)'
 vimcmd_visual_symbol = '[❮](bold fg:yellow)'
 
 [cmd_duration]
-show_milliseconds = true
-format = " in $duration "
-style = "bg:lavender"
 disabled = false
-show_notifications = true
+show_milliseconds = true
 min_time_to_notify = 45000
+show_notifications = false
+style = "bg:teal"
+format = '[[  $duration ](fg:crust bg:teal)]($style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
