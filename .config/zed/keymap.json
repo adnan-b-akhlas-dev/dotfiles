@@ -43,10 +43,58 @@
     },
   },
   {
-    "context": "VimControl && !menu",
+    "context": "Editor && vim_mode == normal",
     "bindings": {
-      "j": "editor::MoveDown",
-      "k": "editor::MoveUp",
+      "j": ["workspace::SendKeystrokes", "g j"],
+      "k": ["workspace::SendKeystrokes", "g k"],
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-k": "editor::DuplicateLineUp",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-alt-shift-up": "editor::DuplicateLineUp",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-shift-j": "editor::DuplicateLineDown",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-alt-shift-down": "editor::DuplicateLineDown",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-k": "editor::MoveLineUp",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "alt-up": "editor::MoveLineUp",
+    },
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+    },
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "alt-down": "editor::MoveLineDown",
     },
   },
 ]
