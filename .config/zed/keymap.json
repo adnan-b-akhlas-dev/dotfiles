@@ -31,6 +31,11 @@
     },
   },
   {
+    "bindings": {
+      "ctrl-alt-y": "workspace::ToggleAllDocks",
+    },
+  },
+  {
     "context": "Workspace",
     "bindings": {
       "alt-shift-b": "workspace::ToggleLeftDock",
@@ -95,6 +100,24 @@
     "context": "Editor",
     "unbind": {
       "alt-down": "editor::MoveLineDown",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-alt-shift-y": "workspace::ToggleAllDocks",
+    },
+  },
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": {
+      "ctrl-shift-enter": "editor::NewlineAbove",
+    },
+  },
+  {
+    "context": "(Editor && mode == full)",
+    "bindings": {
+      "ctrl-enter": "editor::NewlineBelow",
     },
   },
 ]
