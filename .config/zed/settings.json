@@ -23,8 +23,16 @@
   "disable_ai": true,
   "vim_mode": true,
   "relative_line_numbers": "enabled",
-  "icon_theme": "Symbols Icon Theme",
-  "theme": "Catppuccin Mocha",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Symbols Icon Theme",
+    "dark": "Symbols Icon Theme"
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Catppuccin Mocha"
+  },
   "experimental.theme_overrides": {
     "syntax": {
       "keyword": { "font_style": "italic" },
@@ -47,9 +55,6 @@
   "buffer_font_family": "VictorMono Nerd Font Mono",
   "buffer_font_size": 12,
   "buffer_font_weight": 500,
-  "buffer_line_height": {
-    "custom": 1.8,
-  },
   "agent_ui_font_size": 15,
   "agent_buffer_font_size": 12,
   "title_bar": {
@@ -75,7 +80,7 @@
     "hide_root": false,
     "auto_fold_dirs": false,
     "starts_open": false,
-    "git_status": true,
+    "git_status": false,
     "sticky_scroll": false,
     "scrollbar": {
       "show": "never",
@@ -95,7 +100,8 @@
     "modal_max_width": "medium",
   },
   "scrollbar": {
-    "show": "auto",
+    "git_diff": false,
+    "show": "always",
   },
   "gutter": {
     "min_line_number_digits": 0,
@@ -135,7 +141,7 @@
   "restore_on_file_reopen": false,
   "restore_on_startup": "launchpad",
   "git": {
-    "git_gutter": "tracked_files",
+    "git_gutter": "hide",
     "inline_blame": {
       "enabled": false,
     },
